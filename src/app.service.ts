@@ -29,7 +29,11 @@ export class AppService implements OnModuleInit {
 
   public async getNeuralNetworkModelsRowsCount() {
     try {
-      return await this.databaseService.$queryRaw`SELECT COUNT(*) FROM "NeuralNetworkModels"`;
+      type RawQueryResultType = { count: BigInt }[];
+      const rawQueryResult = await this.databaseService
+        .$queryRaw<RawQueryResultType>`SELECT COUNT(*) FROM "NeuralNetworkModels"`;
+
+      return rawQueryResult.map((result) => ({ ...result, count: Number(result.count) }));
 
       return await this.databaseService.neuralNetworkModels.count();
     } catch (error) {
