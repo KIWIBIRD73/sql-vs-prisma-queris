@@ -1,0 +1,105 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model TextBody {
+  TextID        Int             @id @default(autoincrement())
+  TextName      String          @unique
+  Genre         String?
+  TextLanguage  String
+  WordCount     Int             @default(0)
+  AdditionDate  DateTime?
+  Teaching      Boolean         @default(false)
+  SyntaxAnalyse SyntaxAnalyse[]
+  Results       Results[]
+
+  @@map("TextBody")
+}
+
+model Lexicon {
+  WordID            Int                        @id @default(autoincrement())
+  Word              String                     @unique
+  Lemma             String
+  SpeechPart        String?
+  MorphologyChar    String?
+  Frequency         Int                        @default(0)
+  Morphology        Morphology[]
+  LexicalRelations1 LexicalSemanticRelations[] @relation("Word1")
+  LexicalRelations2 LexicalSemanticRelations[] @relation("Word2")
+
+  @@map("Lexicon")
+}
+
+model Morphology {
+  RuleID          Int      @id @default(autoincrement())
+  SpeechPart      String?
+  RuleDescription String
+  RuleExample     Lexicon? @relation(fields: [RuleExampleId], references: [WordID])
+  RuleExampleId   Int?
+
+  @@map("Morphology")
+}
+
+model SyntaxStructures {
+  StructureID          Int             @id @default(autoincrement())
+  StructureDescription String
+  StructureExample     String?
+  SyntaxAnalyse        SyntaxAnalyse[]
+
+  @@map("SyntaxStructures")
+}
+
+model SyntaxAnalyse {
+  AnalyseID   Int              @id @default(autoincrement())
+  TextID      TextBody         @relation(fields: [TextId], references: [TextID])
+  TextId      Int
+  StructureID SyntaxStructures @relation(fields: [StructureId], references: [StructureID])
+  StructureId Int
+  Description String?
+
+  @@map("SyntaxAnalyse")
+}
+
+model LexicalSemanticRelations {
+  Word1ID      Lexicon @relation("Word1", fields: [Word1Id], references: [WordID])
+  Word1Id      Int
+  Word2ID      Lexicon @relation("Word2", fields: [Word2Id], references: [WordID])
+  Word2Id      Int
+  RelationType String
+
+  @@id([Word1Id, Word2Id])
+  @@map("LexicalSemanticRelations")
+}
+
+model NeuralNetworkModels {
+  ModelID      Int       @id @default(autoincrement())
+  Description  String
+  Algorithm    String    @unique
+  LanguagePair String
+  Purpose      String?
+  Results      Results[]
+
+  @@map("NeuralNetworkModels")
+}
+
+model Results {
+  ResultID    Int                 @id @default(autoincrement())
+  ModelID     NeuralNetworkModels @relation(fields: [ModelId], references: [ModelID])
+  ModelId     Int
+  TextID      TextBody            @relation(fields: [TextId], references: [TextID])
+  TextId      Int
+  Description String?
+
+  @@map("Results")
+}

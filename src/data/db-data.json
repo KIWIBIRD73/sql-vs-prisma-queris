@@ -1,0 +1,94 @@
+{
+  "textBodies": [
+    { "TextName": "Война и мир", "Genre": "Роман", "TextLanguage": "Русский", "WordCount": 587000, "AdditionDate": "2022-01-10T12:00:00Z", "Teaching": true },
+    { "TextName": "Pride and Prejudice", "Genre": "Роман", "TextLanguage": "Английский", "WordCount": 122000, "AdditionDate": "2007-02-11T04:56:00Z", "Teaching": false },
+    { "TextName": "На дне", "Genre": "Пьеса", "TextLanguage": "Русский", "WordCount": 30000, "AdditionDate": "2010-12-22T23:40:00Z", "Teaching": true },
+    { "TextName": "The Catcher in the Rye", "Genre": "Роман", "TextLanguage": "Английский", "WordCount": 74000, "AdditionDate": "2009-11-01T19:15:00Z", "Teaching": false },
+    { "TextName": "Мертвые души", "Genre": "Поэма", "TextLanguage": "Русский", "WordCount": 154000, "AdditionDate": "2019-09-23T04:56:00Z", "Teaching": true },
+    { "TextName": "Harry Potter", "Genre": "Роман", "TextLanguage": "Английский", "WordCount": 77000, "AdditionDate": "2021-06-18T04:56:00Z", "Teaching": true },
+    { "TextName": "Тихий Дон", "Genre": "Роман", "TextLanguage": "Русский", "WordCount": 408000, "AdditionDate": "2022-03-12T04:56:00Z", "Teaching": false },
+    { "TextName": "A Tale of Two Cities", "Genre": "Роман", "TextLanguage": "Английский", "WordCount": 135000, "AdditionDate": "2021-04-09T04:56:00Z", "Teaching": true },
+    { "TextName": "Анна Каренина", "Genre": "Роман", "TextLanguage": "Русский", "WordCount": 349000, "AdditionDate": "2020-12-25T04:56:00Z", "Teaching": true },
+    { "TextName": "Macbeth", "Genre": "Роман", "TextLanguage": "Английский", "WordCount": 21000, "AdditionDate": "2020-05-30T04:56:00Z", "Teaching": false }
+  ],
+  "lexicons": [
+    { "Word": "стол", "Lemma": "стол", "SpeechPart": "Существительное", "MorphologyChar": "ед.ч., им.п.", "Frequency": 1000 },
+    { "Word": "есть", "Lemma": "есть", "SpeechPart": "Глагол", "MorphologyChar": "н.вр., 3-е л.", "Frequency": 1500 },
+    { "Word": "красивый", "Lemma": "красивый", "SpeechPart": "Прилагательное", "MorphologyChar": "м.р., ед.ч., им.п.", "Frequency": 900 },
+    { "Word": "быть", "Lemma": "быть", "SpeechPart": "Глагол", "MorphologyChar": "инфинитив", "Frequency": 5000 },
+    { "Word": "ребёнок", "Lemma": "ребёнок", "SpeechPart": "Существительное", "MorphologyChar": "ед.ч., им.п.", "Frequency": 700 },
+    { "Word": "книги", "Lemma": "книга", "SpeechPart": "Существительное", "MorphologyChar": "мн.ч., род.п.", "Frequency": 1100 },
+    { "Word": "быстро", "Lemma": "быстро", "SpeechPart": "Наречие", "MorphologyChar": "", "Frequency": 1200 },
+    { "Word": "мысли", "Lemma": "мысль", "SpeechPart": "Существительное", "MorphologyChar": "мн.ч., им.п.", "Frequency": 600 },
+    { "Word": "говорил", "Lemma": "говорить", "SpeechPart": "Глагол", "MorphologyChar": "прош.вр., м.р.", "Frequency": 1300 },
+    { "Word": "идти", "Lemma": "идти", "SpeechPart": "Глагол", "MorphologyChar": "инфинитив", "Frequency": 900 }
+  ],
+  "morphologies": [
+    { "SpeechPart": "Существительное", "RuleDescription": "Им.п. ед.ч. м.р. заканчивается на \"-о\"", "RuleExampleId": 1 },
+    { "SpeechPart": "Глагол", "RuleDescription": "Прош.вр. м.р. заканчивается на \"-л\"", "RuleExampleId": 9 },
+    { "SpeechPart": "Прилагательное", "RuleDescription": "Им.п. ед.ч. м.р. имеет окончание \"-ый\"", "RuleExampleId": 3 },
+    { "SpeechPart": "Существительное", "RuleDescription": "Мн.ч. род.п. имеет окончание \"-ов\"", "RuleExampleId": 6 },
+    { "SpeechPart": "Наречие", "RuleDescription": "Наречия не изменяются по числам и падежам", "RuleExampleId": 7 },
+    { "SpeechPart": "Глагол", "RuleDescription": "Инфинитив имеет окончание \"-ть\"", "RuleExampleId": 10 },
+    { "SpeechPart": "Существительное", "RuleDescription": "Им.п. мн.ч. ж.р. имеет окончание \"-и\"", "RuleExampleId": 8 },
+    { "SpeechPart": "Глагол", "RuleDescription": "Наст.вр. 3-е лицо ед.ч. оканчивается на \"-ет\"", "RuleExampleId": 9 },
+    { "SpeechPart": "Прилагательное", "RuleDescription": "Мн.ч. им.п. имеет окончание \"-ые\"", "RuleExampleId": 3 },
+    { "SpeechPart": "Глагол", "RuleDescription": "Наст.вр. инфинитивные формы на \"-ть\"", "RuleExampleId": 4 }
+  ],
+  "syntaxStructures": [
+    { "StructureDescription": "Подлежащее + сказуемое", "StructureExample": "Он читает." },
+    { "StructureDescription": "Подлежащее + сказуемое + дополнение", "StructureExample": "Она купила книгу." },
+    { "StructureDescription": "Сказуемое + обстоятельство", "StructureExample": "Поедем завтра" },
+    { "StructureDescription": "Подлежащее + сказуемое + обстоятельство", "StructureExample": "Они ушли вечером." },
+    { "StructureDescription": "Подлежащее + сказуемое + дополнение + обстоятельство", "StructureExample": "Он подарил цветы на праздник." },
+    { "StructureDescription": "Сложносочиненное предложение", "StructureExample": "Я пошел в магазин, и она пошла за мной." },
+    { "StructureDescription": "Сложноподчиненное предложение", "StructureExample": "Когда он пришел, все уже ушли." },
+    { "StructureDescription": "Односоставное предложение", "StructureExample": "Темнеет." },
+    { "StructureDescription": "Вопросительное предложение", "StructureExample": "Ты придешь завтра?" },
+    { "StructureDescription": "Побудительное предложение", "StructureExample": "Сделай это сейчас!" }
+  ],
+  "syntaxAnalyses": [
+    { "TextId": 3, "StructureId": 4, "Description": "Простое предложение" },
+    { "TextId": 4, "StructureId": 3, "Description": "Простое предложение" },
+    { "TextId": 3, "StructureId": 4, "Description": "Сложное предложение" },
+    { "TextId": 4, "StructureId": 6, "Description": "Сложносочиненное предложение" },
+    { "TextId": 5, "StructureId": 5, "Description": "Простое с обстоятельством" },
+    { "TextId": 6, "StructureId": 7, "Description": "Сложноподчиненное предложение" },
+    { "TextId": 7, "StructureId": 8, "Description": "Односоставное предложение" },
+    { "TextId": 8, "StructureId": 3, "Description": "Простое предложение" },
+    { "TextId": 9, "StructureId": 9, "Description": "Вопросительное предложение" },
+    { "TextId": 10, "StructureId": 10, "Description": "Побудительное предложение" }
+  ],
+  "lexicalSemanticRelations": [
+    { "Word1Id": 1, "Word2Id": 5, "RelationType": "Синонимия" },
+    { "Word1Id": 2, "Word2Id": 4, "RelationType": "Антонимия" },
+    { "Word1Id": 3, "Word2Id": 6, "RelationType": "Гипонимия" },
+    { "Word1Id": 7, "Word2Id": 8, "RelationType": "Синонимия" },
+    { "Word1Id": 9, "Word2Id": 3, "RelationType": "Антонимия" },
+    { "Word1Id": 10, "Word2Id": 5, "RelationType": "Гипонимия" },
+    { "Word1Id": 8, "Word2Id": 2, "RelationType": "Антонимия" },
+    { "Word1Id": 4, "Word2Id": 1, "RelationType": "Синонимия" },
+    { "Word1Id": 6, "Word2Id": 3, "RelationType": "Гипонимия" },
+    { "Word1Id": 5, "Word2Id": 7, "RelationType": "Антонимия" }
+  ],
+  "neuralNetworkModels": [
+    { "Description": "Модель для анализа POS", "Algorithm": "BERT", "LanguagePair": "русский-английский", "Purpose": "Определение частей речи" },
+    { "Description": "Модель для перевода", "Algorithm": "GPT", "LanguagePair": "английский-русский", "Purpose": "Машинный перевод" },
+    { "Description": "Модель для анализа синтаксиса", "Algorithm": "BERT-", "LanguagePair": "русский-английский", "Purpose": "Анализ синтаксических структур" },
+    { "Description": "Модель для морфологического анализа", "Algorithm": "Word2Vec", "LanguagePair": "английский-русский", "Purpose": "Морфологический разбор" },
+    { "Description": "Модель для распознавания именованных сущностей", "Algorithm": "GPT-2", "LanguagePair": "русский-английский", "Purpose": "Работа с именованными сущностями" },
+    { "Description": "Модель для генерации текста", "Algorithm": "GPT-3.5", "LanguagePair": "английский-русский", "Purpose": "Генерация текста" }
+  ],
+  "results": [
+    { "ModelId": 1, "TextId": 1, "Description": "Успешное предсказание частей речи для 95% слов текста \"Война и мир\"." },
+    { "ModelId": 2, "TextId": 2, "Description": "Перевод текста \"Pride and Prejudice\" на русский с точностью 85%." },
+    { "ModelId": 3, "TextId": 3, "Description": "Корректный анализ синтаксических структур в пьесе \"На дне\" для 92% предложений." },
+    { "ModelId": 1, "TextId": 4, "Description": "Определение частей речи для 90% слов в тексте \"The Catcher in the Rye\"." },
+    { "ModelId": 4, "TextId": 5, "Description": "Успешный морфологический разбор текста \"Мертвые души\" для 93% слов." },
+    { "ModelId": 3, "TextId": 6, "Description": "Точное определение синтаксических структур для 85% предложений в тексте \"Harry Potter\"." },
+    { "ModelId": 5, "TextId": 7, "Description": "Распознавание именованных сущностей с точностью 87% в романе \"Тихий Дон\"." },
+    { "ModelId": 1, "TextId": 8, "Description": "Предсказание частей речи для 88% слов текста \"A Tale of Two Cities\"." },
+    { "ModelId": 4, "TextId": 9, "Description": "Морфологический анализ текста \"Анна Каренина\" с точностью 90%." },
+    { "ModelId": 6, "TextId": 10, "Description": "Генерация текста на основе пьесы \"Macbeth\" с сохранением стилистических особенностей." }
+  ]
+}
